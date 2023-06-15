@@ -24,9 +24,23 @@ h3 {
 h1 {
   color: yellow;
   margin: 10px 0px 20px;
-  text-align:center;
+  margin-bottom: 20px;
+  text-align: center;
   height: 10rem;
   font-size: 50px;
+  animation: flowAnimation 5s linear infinite;
+}
+
+@keyframes flowAnimation {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }
 
 .container {
